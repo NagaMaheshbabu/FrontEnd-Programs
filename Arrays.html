@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="border: 2px solid lightgreen;background-color: aqua;color: white;outline: 2px solid orange;line-height: 10px;size: 2px;width: 100px;cursor: pointer;outline-offset: 2px;outline-color: black;outline-style: inset;">Arrays</h2>
+<p  style="font-family: monospace;font-size: medium;" id="para">Arrays are Special type of Objects.The typeOf() operator is used to return objects for javascript</p>
+<script>
+    var arrays =[];
+    arrays[0] = 'BMW';
+    arrays[1] = 'Scoda';
+    arrays[2] = 'Benz';
+    arrays[3] = 'Suzuki';
+
+    let array = "<ol>";
+    arrays.forEach(did);
+    array += "</ol>";
+document.getElementById('para').innerHTML = array;
+
+
+    for(var i=0;i<arrays.length;i++)
+    {
+console.log(arrays[i])
+    }
+
+    //creating a function
+
+    function did(hii)
+    {
+array += "<li>" + hii + "</li>";
+        
+    }
+   
+
+
+   const person = [{firstName :'john'}];
+
+   console.log(person[0].firstName);
+ 
+</script>
+
+</body>
+</html>
