@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p>Template Literals</p>
+    <br>
+    <p id ="para">Doing ol and li Using JavaScript with the help of Template Literals</p>
+
+    <script>
+
+        let header = "Template Literals ";
+        let list = ['template literals','javascript','es7'];
+
+        let html = `<h3>${header}</h3><ol>`;
+
+            for(var a of list)
+            {
+                 html += `<li>${a}</li><br>`;
+            }
+            html += `</ol>`;
+            document.getElementById('para').innerHTML = html;
+
+
+            
+
+    </script>
+    
+</body>
+</html>
